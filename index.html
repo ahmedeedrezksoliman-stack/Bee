@@ -1,0 +1,3038 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Beeuora | عسل نحل طبيعي</title>
+  <meta name="description" content="Beeuora - عسل نحل طبيعي 100%">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+
+    :root {
+      --cream: #fbf8f1;
+      --cream-dark: #f2ebdc;
+      --white: #ffffff;
+
+      --gold: #b68a3c;
+      --gold-dark: #8e6728;
+      --gold-light: #d9b66c;
+
+      --brown: #33251a;
+      --brown-light: #706052;
+
+      --border: rgba(51, 37, 26, .10);
+
+      --shadow-sm: 0 5px 20px rgba(51,37,26,.06);
+      --shadow-md: 0 18px 50px rgba(51,37,26,.11);
+
+      --radius: 22px;
+
+      --max-width: 1240px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--brown);
+      font-family: "Cairo", sans-serif;
+      line-height: 1.7;
+      padding-bottom: 0;
+    }
+
+    body.has-bottom-nav {
+      padding-bottom: 75px;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =====================================
+       HEADER
+    ===================================== */
+
+    .header {
+      height: 78px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(251,248,241,.88);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav {
+      width: min(calc(100% - 36px), var(--max-width));
+      height: 100%;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: "Playfair Display", serif;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -.7px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-link {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 10px 15px;
+
+      border-radius: 13px;
+
+      color: var(--brown-light);
+
+      font-size: 13px;
+      font-weight: 700;
+
+      transition: .25s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--gold-dark);
+      background: rgba(182,138,60,.09);
+    }
+
+    .cart-link {
+      position: relative;
+    }
+
+    .cart-count {
+      position: absolute;
+
+      top: 2px;
+      right: 2px;
+
+      min-width: 19px;
+      height: 19px;
+
+      padding: 0 5px;
+
+      border-radius: 100px;
+
+      background: var(--gold);
+      color: white;
+
+      font-size: 10px;
+      font-weight: 800;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 2px solid var(--cream);
+    }
+
+    /* =====================================
+       PAGES
+    ===================================== */
+
+    .page {
+      display: none;
+      min-height: calc(100vh - 78px);
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    /* =====================================
+       HERO
+    ===================================== */
+
+    .hero {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: 24px auto 0;
+
+      overflow: hidden;
+
+      border-radius: 30px;
+
+      box-shadow: var(--shadow-md);
+
+      background: #eee3cf;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* =====================================
+       SECTIONS
+    ===================================== */
+
+    .section {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: 80px auto;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      gap: 20px;
+
+      margin-bottom: 35px;
+    }
+
+    .heading-small {
+      color: var(--gold-dark);
+
+      font-size: 12px;
+      font-weight: 800;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 5px;
+    }
+
+    .heading-title {
+      font-size: clamp(28px,4vw,42px);
+
+      line-height: 1.3;
+
+      font-weight: 800;
+
+      letter-spacing: -1px;
+    }
+
+    .heading-description {
+      max-width: 480px;
+
+      color: var(--brown-light);
+
+      font-size: 13px;
+
+      margin-top: 8px;
+    }
+
+    .view-all {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+
+      color: var(--gold-dark);
+
+      font-size: 13px;
+      font-weight: 800;
+
+      white-space: nowrap;
+    }
+
+    /* =====================================
+       PRODUCT GRID
+    ===================================== */
+
+    .products-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4,1fr);
+
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+
+      border: 1px solid rgba(51,37,26,.07);
+
+      border-radius: var(--radius);
+
+      overflow: hidden;
+
+      box-shadow: var(--shadow-sm);
+
+      transition: .3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow: var(--shadow-md);
+    }
+
+    .product-image {
+      position: relative;
+
+      aspect-ratio: 1 / 1;
+
+      background: #f3ecdf;
+
+      overflow: hidden;
+
+      cursor: pointer;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: .5s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.045);
+    }
+
+    .product-info {
+      padding: 19px;
+    }
+
+    .product-name {
+      font-size: 16px;
+      font-weight: 800;
+
+      cursor: pointer;
+    }
+
+    .product-description {
+      color: #8a7a6a;
+
+      font-size: 11px;
+
+      min-height: 25px;
+    }
+
+    .product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 10px;
+
+      margin-top: 17px;
+    }
+
+    .price {
+      font-size: 17px;
+      font-weight: 800;
+
+      white-space: nowrap;
+    }
+
+    .price small {
+      display: block;
+
+      color: #8a7a6a;
+
+      font-size: 9px;
+
+      font-weight: 600;
+    }
+
+    .add-btn {
+      border: none;
+
+      height: 42px;
+
+      padding: 0 14px;
+
+      border-radius: 12px;
+
+      background: var(--brown);
+
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 6px;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      transition: .25s ease;
+    }
+
+    .add-btn:hover {
+      background: var(--gold-dark);
+
+      transform: translateY(-2px);
+    }
+
+    .add-btn.added {
+      background: var(--gold);
+    }
+
+    /* =====================================
+       FEATURES
+    ===================================== */
+
+    .features {
+      display: grid;
+
+      grid-template-columns: repeat(3,1fr);
+
+      gap: 18px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,.65);
+
+      border: 1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      padding: 28px;
+
+      display: flex;
+
+      gap: 17px;
+    }
+
+    .feature-icon {
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+
+      border-radius: 15px;
+
+      background: rgba(182,138,60,.11);
+
+      color: var(--gold-dark);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .feature h3 {
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+    .feature p {
+      color: var(--brown-light);
+
+      font-size: 11px;
+    }
+
+    /* =====================================
+       PAGE HEADER
+    ===================================== */
+
+    .page-header {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: 60px auto 40px;
+    }
+
+    /* =====================================
+       PRODUCT DETAILS
+    ===================================== */
+
+    .product-details {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: 45px auto 80px;
+    }
+
+    .back-button {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      border: none;
+
+      background: transparent;
+
+      color: var(--brown-light);
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      margin-bottom: 25px;
+    }
+
+    .back-button:hover {
+      color: var(--gold-dark);
+    }
+
+    .product-detail-layout {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .detail-image {
+      border-radius: 30px;
+
+      overflow: hidden;
+
+      background: #f1e9da;
+
+      box-shadow: var(--shadow-md);
+    }
+
+    .detail-image img {
+      width: 100%;
+
+      aspect-ratio: 1 / 1;
+
+      object-fit: cover;
+    }
+
+    .detail-info {
+      padding: 10px 0;
+    }
+
+    .detail-label {
+      color: var(--gold-dark);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.5px;
+
+      margin-bottom: 10px;
+    }
+
+    .detail-title {
+      font-size: clamp(30px,4vw,50px);
+
+      line-height: 1.25;
+
+      font-weight: 800;
+
+      margin-bottom: 15px;
+    }
+
+    .detail-description {
+      color: var(--brown-light);
+
+      font-size: 14px;
+
+      line-height: 2;
+
+      max-width: 500px;
+
+      margin-bottom: 25px;
+    }
+
+    .detail-price {
+      font-size: 29px;
+
+      font-weight: 800;
+
+      margin-bottom: 5px;
+    }
+
+    .detail-unit {
+      color: var(--brown-light);
+
+      font-size: 12px;
+
+      margin-bottom: 25px;
+    }
+
+    .quantity-box {
+      display: flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 15px;
+    }
+
+    .quantity-control {
+      display: flex;
+
+      align-items: center;
+
+      gap: 5px;
+
+      background: #f3eee5;
+
+      padding: 4px;
+
+      border-radius: 13px;
+    }
+
+    .quantity-control button {
+      width: 35px;
+      height: 35px;
+
+      border: none;
+
+      background: white;
+
+      border-radius: 9px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: var(--brown);
+    }
+
+    .quantity-number {
+      width: 35px;
+
+      text-align: center;
+
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+    .detail-add {
+      width: 100%;
+
+      height: 54px;
+
+      border: none;
+
+      border-radius: 15px;
+
+      background: var(--brown);
+
+      color: white;
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      transition: .25s;
+    }
+
+    .detail-add:hover {
+      background: var(--gold-dark);
+
+      transform: translateY(-2px);
+    }
+
+    /* =====================================
+       RECOMMENDATIONS
+    ===================================== */
+
+    .recommendations {
+      margin-top: 100px;
+    }
+
+    /* =====================================
+       CART
+    ===================================== */
+
+    .cart-layout {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: 0 auto 80px;
+
+      display: grid;
+
+      grid-template-columns: 1fr 360px;
+
+      gap: 25px;
+
+      align-items: start;
+    }
+
+    .cart-items {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 14px;
+    }
+
+    .cart-item {
+      background: white;
+
+      border: 1px solid var(--border);
+
+      border-radius: 20px;
+
+      padding: 15px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 18px;
+    }
+
+    .cart-item-image {
+      width: 100px;
+      height: 100px;
+
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      background: #f3ecdf;
+
+      flex-shrink: 0;
+    }
+
+    .cart-item-image img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+    .cart-item-details {
+      flex: 1;
+    }
+
+    .cart-item-name {
+      font-size: 15px;
+
+      font-weight: 800;
+    }
+
+    .cart-item-price {
+      color: var(--gold-dark);
+
+      font-size: 12px;
+
+      font-weight: 700;
+    }
+
+    .cart-item-total {
+      min-width: 90px;
+
+      text-align: center;
+
+      font-size: 14px;
+
+      font-weight: 800;
+    }
+
+    .remove-btn {
+      width: 38px;
+      height: 38px;
+
+      border: none;
+
+      background: transparent;
+
+      color: #9a8876;
+
+      border-radius: 10px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    .remove-btn:hover {
+      background: #faeaea;
+
+      color: #a43b3b;
+    }
+
+    .cart-summary {
+      background: var(--brown);
+
+      color: white;
+
+      border-radius: 24px;
+
+      padding: 28px;
+
+      position: sticky;
+
+      top: 105px;
+    }
+
+    .summary-title {
+      font-size: 19px;
+
+      font-weight: 800;
+
+      margin-bottom: 22px;
+    }
+
+    .summary-line {
+      display: flex;
+
+      justify-content: space-between;
+
+      padding: 12px 0;
+
+      border-bottom: 1px solid rgba(255,255,255,.1);
+
+      color: rgba(255,255,255,.7);
+
+      font-size: 12px;
+    }
+
+    .summary-total {
+      display: flex;
+
+      justify-content: space-between;
+
+      margin-top: 23px;
+
+      font-size: 19px;
+
+      font-weight: 800;
+    }
+
+    .checkout-btn {
+      width: 100%;
+
+      height: 52px;
+
+      border: none;
+
+      border-radius: 15px;
+
+      background: var(--gold);
+
+      color: white;
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      margin-top: 23px;
+    }
+
+    .checkout-btn:hover {
+      background: var(--gold-light);
+    }
+
+    .empty-cart {
+      background: white;
+
+      border: 1px solid var(--border);
+
+      border-radius: 24px;
+
+      padding: 70px 25px;
+
+      text-align: center;
+    }
+
+    .empty-icon {
+      width: 75px;
+      height: 75px;
+
+      margin: 0 auto 20px;
+
+      border-radius: 24px;
+
+      background: #f3ecdf;
+
+      color: var(--gold-dark);
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+    .empty-cart h2 {
+      font-size: 21px;
+
+      margin-bottom: 5px;
+    }
+
+    .empty-cart p {
+      color: var(--brown-light);
+
+      font-size: 12px;
+
+      margin-bottom: 20px;
+    }
+
+    .empty-cart-btn {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      background: var(--brown);
+
+      color: white;
+
+      padding: 12px 20px;
+
+      border-radius: 13px;
+
+      font-size: 12px;
+
+      font-weight: 700;
+    }
+
+    /* =====================================
+       FOOTER
+    ===================================== */
+
+    .footer {
+      background: #2b2118;
+
+      color: white;
+
+      margin-top: 100px;
+    }
+
+    .footer-inner {
+      width: min(calc(100% - 36px), var(--max-width));
+
+      margin: auto;
+
+      padding: 55px 0 25px;
+    }
+
+    .footer-main {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 50px;
+
+      padding-bottom: 35px;
+
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    .footer-logo {
+      font-family: "Playfair Display",serif;
+
+      font-size: 28px;
+
+      font-weight: 700;
+
+      margin-bottom: 8px;
+    }
+
+    .footer-logo span {
+      color: var(--gold-light);
+    }
+
+    .footer-description {
+      max-width: 350px;
+
+      color: rgba(255,255,255,.55);
+
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 8px;
+    }
+
+    .footer-links h4 {
+      font-size: 13px;
+
+      margin-bottom: 3px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.55);
+
+      font-size: 11px;
+    }
+
+    .copyright {
+      text-align: center;
+
+      color: rgba(255,255,255,.35);
+
+      font-size: 10px;
+
+      padding-top: 20px;
+    }
+
+    /* =====================================
+       MOBILE BOTTOM NAV
+    ===================================== */
+
+    .bottom-nav {
+      display: none;
+    }
+
+    /* =====================================
+       TOAST
+    ===================================== */
+
+    .toast {
+      position: fixed;
+
+      bottom: 25px;
+      right: 25px;
+
+      z-index: 5000;
+
+      background: var(--brown);
+
+      color: white;
+
+      padding: 13px 18px;
+
+      border-radius: 13px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 9px;
+
+      font-size: 12px;
+
+      box-shadow: var(--shadow-md);
+
+      transform: translateY(100px);
+
+      opacity: 0;
+
+      pointer-events: none;
+
+      transition: .3s ease;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+
+      opacity: 1;
+    }
+
+    .toast svg {
+      color: var(--gold-light);
+    }
+
+    /* =====================================
+       RESPONSIVE
+    ===================================== */
+
+    @media(max-width:1050px) {
+
+      .products-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .cart-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .cart-summary {
+        position: static;
+      }
+
+      .product-detail-layout {
+        gap: 35px;
+      }
+
+    }
+
+    @media(max-width:700px) {
+
+      body.has-bottom-nav {
+        padding-bottom: 74px;
+      }
+
+      .header {
+        height: 67px;
+      }
+
+      .nav {
+        width: calc(100% - 24px);
+      }
+
+      .logo {
+        font-size: 25px;
+      }
+
+      .nav-links {
+        gap: 2px;
+      }
+
+      .nav-link {
+        padding: 9px;
+      }
+
+      .nav-link span {
+        display: none;
+      }
+
+      .hero {
+        width: calc(100% - 24px);
+
+        margin-top: 12px;
+
+        border-radius: 20px;
+      }
+
+      .section {
+        width: calc(100% - 24px);
+
+        margin: 55px auto;
+      }
+
+      .section-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+      .heading-title {
+        font-size: 27px;
+      }
+
+      .products-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+
+        gap: 9px;
+      }
+
+      .product-card {
+        border-radius: 16px;
+      }
+
+      .product-info {
+        padding: 12px;
+      }
+
+      .product-name {
+        font-size: 12px;
+      }
+
+      .product-description {
+        font-size: 9px;
+      }
+
+      .product-bottom {
+        display: block;
+
+        margin-top: 10px;
+      }
+
+      .price {
+        font-size: 14px;
+
+        margin-bottom: 8px;
+      }
+
+      .add-btn {
+        width: 100%;
+
+        height: 38px;
+
+        font-size: 9px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .page-header {
+        width: calc(100% - 24px);
+
+        margin: 38px auto 25px;
+      }
+
+      /* PRODUCT DETAILS */
+
+      .product-details {
+        width: calc(100% - 24px);
+
+        margin: 25px auto 60px;
+      }
+
+      .product-detail-layout {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+      }
+
+      .detail-image {
+        border-radius: 20px;
+      }
+
+      .detail-title {
+        font-size: 30px;
+      }
+
+      .detail-description {
+        font-size: 13px;
+      }
+
+      .recommendations {
+        margin-top: 65px;
+      }
+
+      /* CART */
+
+      .cart-layout {
+        width: calc(100% - 24px);
+      }
+
+      .cart-item {
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+        padding: 10px;
+      }
+
+      .cart-item-image {
+        width: 75px;
+        height: 75px;
+      }
+
+      .cart-item-details {
+        min-width: calc(100% - 100px);
+      }
+
+      .cart-item-total {
+        margin-right: 85px;
+      }
+
+      /* FOOTER */
+
+      .footer {
+        margin-top: 60px;
+      }
+
+      .footer-main {
+        flex-direction: column;
+      }
+
+      /* BOTTOM NAV */
+
+      .bottom-nav {
+        position: fixed;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-around;
+
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+
+        height: 62px;
+
+        z-index: 3000;
+
+        background: rgba(51,37,26,.96);
+
+        border-radius: 19px;
+
+        box-shadow: 0 15px 40px rgba(0,0,0,.2);
+
+        backdrop-filter: blur(15px);
+      }
+
+      .bottom-link {
+        position: relative;
+
+        width: 33%;
+
+        height: 100%;
+
+        color: rgba(255,255,255,.55);
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: 2px;
+
+        font-size: 9px;
+
+        font-weight: 700;
+
+        transition: .2s;
+      }
+
+      .bottom-link.active {
+        color: var(--gold-light);
+      }
+
+      .bottom-cart-count {
+        position: absolute;
+
+        top: 9px;
+
+        margin-right: 24px;
+
+        min-width: 17px;
+        height: 17px;
+
+        border-radius: 50px;
+
+        background: var(--gold);
+
+        color: white;
+
+        font-size: 8px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        border: 2px solid #33251a;
+      }
+
+      .toast {
+        right: 12px;
+
+        left: 12px;
+
+        bottom: 85px;
+
+        justify-content: center;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body class="has-bottom-nav">
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+  <nav class="nav">
+
+    <a
+      href="#home"
+      class="logo"
+      onclick="navigate('home')"
+    >
+      Beeu<span>ora</span>
+    </a>
+
+
+    <div class="nav-links">
+
+      <a
+        href="#home"
+        class="nav-link"
+        data-page="home"
+        onclick="navigate('home')"
+      >
+        <i data-lucide="house" width="17"></i>
+        <span>الرئيسية</span>
+      </a>
+
+
+      <a
+        href="#products"
+        class="nav-link"
+        data-page="products"
+        onclick="navigate('products')"
+      >
+        <i data-lucide="shopping-bag" width="17"></i>
+        <span>المنتجات</span>
+      </a>
+
+
+      <a
+        href="#cart"
+        class="nav-link cart-link"
+        data-page="cart"
+        onclick="navigate('cart')"
+      >
+
+        <i data-lucide="shopping-cart" width="18"></i>
+
+        <span>السلة</span>
+
+        <b class="cart-count" id="cartCount">0</b>
+
+      </a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+<!-- =========================================
+     HOME
+========================================= -->
+
+<main id="homePage" class="page">
+
+  <section class="hero">
+
+    <img
+      src="https://i.postimg.cc/jdC6SRd6/tsmym-bdwn-ʿnwan-20260918-201354-0000.png"
+      alt="Beeuora عسل نحل طبيعي"
+    >
+
+  </section>
+
+
+  <section class="section">
+
+    <div class="section-heading">
+
+      <div>
+
+        <div class="heading-small">
+          BEEUORA HONEY
+        </div>
+
+        <h1 class="heading-title">
+          منتجات مختارة بعناية
+        </h1>
+
+        <p class="heading-description">
+          عسل نحل طبيعي 100% بطعم أصيل وجودة نحرص عليها في كل عبوة.
+        </p>
+
+      </div>
+
+
+      <a
+        href="#products"
+        class="view-all"
+        onclick="navigate('products')"
+      >
+
+        عرض جميع المنتجات
+
+        <i data-lucide="arrow-left" width="15"></i>
+
+      </a>
+
+    </div>
+
+
+    <div
+      class="products-grid"
+      id="homeProducts"
+    ></div>
+
+  </section>
+
+
+  <section class="section">
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          <i data-lucide="leaf" width="21"></i>
+        </div>
+
+        <div>
+          <h3>عسل طبيعي</h3>
+
+          <p>
+            منتجات مختارة بعناية لعشاق العسل الحقيقي.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          <i data-lucide="package-check" width="21"></i>
+        </div>
+
+        <div>
+          <h3>تغليف بعناية</h3>
+
+          <p>
+            نحرص على وصول المنتج إليك في أفضل حالة.
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="feature-icon">
+          <i data-lucide="heart" width="21"></i>
+        </div>
+
+        <div>
+          <h3>اختيارنا لك</h3>
+
+          <p>
+            منتجات متنوعة تناسب مختلف الأذواق.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- =========================================
+     PRODUCTS PAGE
+========================================= -->
+
+<main id="productsPage" class="page">
+
+  <section class="page-header">
+
+    <div class="heading-small">
+      BEEUORA
+    </div>
+
+    <h1 class="heading-title">
+      جميع المنتجات
+    </h1>
+
+    <p class="heading-description">
+      اكتشف تشكيلة بيورا من عسل النحل الطبيعي.
+    </p>
+
+  </section>
+
+
+  <section class="section" style="margin-top:0;">
+
+    <div
+      class="products-grid"
+      id="allProducts"
+    ></div>
+
+  </section>
+
+</main>
+
+
+<!-- =========================================
+     PRODUCT DETAIL PAGE
+========================================= -->
+
+<main id="productPage" class="page">
+
+  <section class="product-details">
+
+    <button
+      class="back-button"
+      onclick="navigate('products')"
+    >
+
+      <i data-lucide="arrow-right" width="16"></i>
+
+      العودة إلى المنتجات
+
+    </button>
+
+
+    <div
+      class="product-detail-layout"
+      id="productDetail"
+    ></div>
+
+
+    <section class="recommendations">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="heading-small">
+            BEEUORA
+          </div>
+
+          <h2 class="heading-title">
+            قد يعجبك أيضًا
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="products-grid"
+        id="recommendedProducts"
+      ></div>
+
+    </section>
+
+  </section>
+
+</main>
+
+
+<!-- =========================================
+     CART PAGE
+========================================= -->
+
+<main id="cartPage" class="page">
+
+  <section class="page-header">
+
+    <div class="heading-small">
+      BEEUORA
+    </div>
+
+    <h1 class="heading-title">
+      سلة التسوق
+    </h1>
+
+    <p class="heading-description">
+      راجع المنتجات والكميات قبل إتمام طلبك.
+    </p>
+
+  </section>
+
+
+  <section class="cart-layout">
+
+    <div id="cartContainer"></div>
+
+
+    <aside
+      class="cart-summary"
+      id="cartSummary"
+    >
+
+      <div class="summary-title">
+        ملخص الطلب
+      </div>
+
+      <div class="summary-line">
+
+        <span>
+          عدد المنتجات
+        </span>
+
+        <span id="summaryQuantity">
+          0
+        </span>
+
+      </div>
+
+
+      <div class="summary-line">
+
+        <span>
+          الإجمالي الفرعي
+        </span>
+
+        <span id="summarySubtotal">
+          0 جنيه
+        </span>
+
+      </div>
+
+
+      <div class="summary-total">
+
+        <span>
+          الإجمالي
+        </span>
+
+        <span id="summaryTotal">
+          0 جنيه
+        </span>
+
+      </div>
+
+
+      <button
+        class="checkout-btn"
+        onclick="checkout()"
+      >
+        إتمام الطلب
+      </button>
+
+    </aside>
+
+  </section>
+
+</main>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+  <div class="footer-inner">
+
+    <div class="footer-main">
+
+      <div>
+
+        <div class="footer-logo">
+          Beeu<span>ora</span>
+        </div>
+
+        <p class="footer-description">
+          عسل نحل طبيعي 100% ومنتجات مختارة بعناية لعشاق الطعم الأصيل.
+        </p>
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <h4>
+          روابط سريعة
+        </h4>
+
+        <a
+          href="#home"
+          onclick="navigate('home')"
+        >
+          الرئيسية
+        </a>
+
+        <a
+          href="#products"
+          onclick="navigate('products')"
+        >
+          المنتجات
+        </a>
+
+        <a
+          href="#cart"
+          onclick="navigate('cart')"
+        >
+          السلة
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 Beeuora. جميع الحقوق محفوظة.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================
+     MOBILE BOTTOM NAVIGATION
+========================================= -->
+
+<nav class="bottom-nav">
+
+  <a
+    href="#home"
+    class="bottom-link"
+    data-bottom-page="home"
+    onclick="navigate('home')"
+  >
+
+    <i data-lucide="house" width="20"></i>
+
+    <span>
+      الرئيسية
+    </span>
+
+  </a>
+
+
+  <a
+    href="#products"
+    class="bottom-link"
+    data-bottom-page="products"
+    onclick="navigate('products')"
+  >
+
+    <i data-lucide="shopping-bag" width="20"></i>
+
+    <span>
+      المنتجات
+    </span>
+
+  </a>
+
+
+  <a
+    href="#cart"
+    class="bottom-link"
+    data-bottom-page="cart"
+    onclick="navigate('cart')"
+  >
+
+    <i data-lucide="shopping-cart" width="20"></i>
+
+    <b
+      class="bottom-cart-count"
+      id="bottomCartCount"
+    >
+      0
+    </b>
+
+    <span>
+      السلة
+    </span>
+
+  </a>
+
+</nav>
+
+
+<!-- =========================================
+     TOAST
+========================================= -->
+
+<div
+  class="toast"
+  id="toast"
+>
+
+  <i
+    data-lucide="check-circle"
+    width="18"
+  ></i>
+
+  <span id="toastText">
+    تمت الإضافة
+  </span>
+
+</div>
+
+
+<script>
+
+  /* =========================================
+     PRODUCTS
+  ========================================= */
+
+  const products = [
+
+    {
+      id: 1,
+
+      name: "عسل حبة البركة",
+
+      price: 250,
+
+      unit: "كيلو",
+
+      description:
+        "عسل نحل طبيعي يتميز بطعم غني ونكهة مميزة مع حبة البركة. اختيار مناسب لمن يبحث عن مذاق قوي ومميز.",
+
+      shortDescription:
+        "عسل نحل طبيعي بنكهة حبة البركة",
+
+      image:
+        "https://i.postimg.cc/GttDtjr1/tsmym-bdwn-ʿnwan-20260918-195343-0000.png"
+    },
+
+
+    {
+      id: 2,
+
+      name: "عسل زهرة البرسيم",
+
+      price: 180,
+
+      unit: "كيلو",
+
+      description:
+        "عسل زهرة البرسيم بطعم طبيعي متوازن وقوام مميز، مناسب للاستخدام اليومي والاستمتاع بمذاق العسل الأصيل.",
+
+      shortDescription:
+        "عسل طبيعي من زهرة البرسيم",
+
+      image:
+        "https://i.postimg.cc/q7rCyr02/1789751460411.png"
+    },
+
+
+    {
+      id: 3,
+
+      name: "عسل خلطة العريس",
+
+      price: 420,
+
+      unit: "كيلو",
+
+      description:
+        "خلطة مميزة من العسل والمكونات المختارة بعناية لعشاق النكهات الغنية. منتج مميز لمحبي التجارب المختلفة.",
+
+      shortDescription:
+        "خلطة مميزة لعشاق العسل",
+
+      image:
+        "https://i.postimg.cc/hjPzZ0XQ/tsmym-bdwn-ʿnwan-20260918-161025-0000.png"
+    },
+
+
+    {
+      id: 4,
+
+      name: "عسل مكسرات بالعسل",
+
+      price: 170,
+
+      unit: "نصف كيلو",
+
+      description:
+        "مزيج غني من العسل والمكسرات، يجمع بين حلاوة العسل وقوام المكسرات في تجربة مختلفة ومميزة.",
+
+      shortDescription:
+        "مزيج غني من المكسرات والعسل",
+
+      image:
+        "https://i.postimg.cc/90sDM5Jk/tsmym-bdwn-ʿnwan-20260918-155500-0000.png"
+    }
+
+  ];
+
+
+  /* =========================================
+     CART
+  ========================================= */
+
+  let cart =
+    JSON.parse(
+      localStorage.getItem("beeuora_cart")
+    ) || [];
+
+
+  /* =========================================
+     PRICE
+  ========================================= */
+
+  function formatPrice(price) {
+
+    return new Intl.NumberFormat("ar-EG")
+      .format(price);
+
+  }
+
+
+  /* =========================================
+     PRODUCT CARD
+  ========================================= */
+
+  function createProductCard(product) {
+
+    const cartItem =
+      cart.find(
+        item => item.id === product.id
+      );
+
+    const added =
+      Boolean(cartItem);
+
+    return `
+
+      <article class="product-card">
+
+        <div
+          class="product-image"
+          onclick="openProduct(${product.id})"
+        >
+
+          <img
+            src="${product.image}"
+            alt="${product.name}"
+            loading="lazy"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <h2
+            class="product-name"
+            onclick="openProduct(${product.id})"
+          >
+            ${product.name}
+          </h2>
+
+
+          <p class="product-description">
+            ${product.shortDescription}
+          </p>
+
+
+          <div class="product-bottom">
+
+            <div class="price">
+
+              ${formatPrice(product.price)}
+
+              <small>
+                جنيه / ${product.unit}
+              </small>
+
+            </div>
+
+
+            <button
+              class="add-btn ${added ? "added" : ""}"
+              onclick="addToCart(${product.id})"
+            >
+
+              <i
+                data-lucide="${added ? "check" : "plus"}"
+                width="15"
+              ></i>
+
+              ${added ? "تمت الإضافة" : "أضف للسلة"}
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    `;
+
+  }
+
+
+  /* =========================================
+     RENDER PRODUCTS
+  ========================================= */
+
+  function renderProducts() {
+
+    document.getElementById("homeProducts").innerHTML =
+      products
+        .map(createProductCard)
+        .join("");
+
+
+    document.getElementById("allProducts").innerHTML =
+      products
+        .map(createProductCard)
+        .join("");
+
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     OPEN PRODUCT
+  ========================================= */
+
+  function openProduct(id) {
+
+    const product =
+      products.find(
+        p => p.id === id
+      );
+
+    if (!product) return;
+
+
+    renderProductDetails(product);
+
+
+    navigate(
+      "product",
+      false
+    );
+
+  }
+
+
+  /* =========================================
+     PRODUCT DETAILS
+  ========================================= */
+
+  function renderProductDetails(product) {
+
+    const cartItem =
+      cart.find(
+        item => item.id === product.id
+      );
+
+
+    const quantity =
+      cartItem ? cartItem.quantity : 1;
+
+
+    document.getElementById("productDetail").innerHTML = `
+
+      <div class="detail-image">
+
+        <img
+          src="${product.image}"
+          alt="${product.name}"
+        >
+
+      </div>
+
+
+      <div class="detail-info">
+
+        <div class="detail-label">
+          BEEUORA HONEY
+        </div>
+
+
+        <h1 class="detail-title">
+          ${product.name}
+        </h1>
+
+
+        <p class="detail-description">
+          ${product.description}
+        </p>
+
+
+        <div class="detail-price">
+          ${formatPrice(product.price)} جنيه
+        </div>
+
+
+        <div class="detail-unit">
+          السعر لكل ${product.unit}
+        </div>
+
+
+        <div class="quantity-box">
+
+          <div class="quantity-control">
+
+            <button
+              onclick="detailQuantityChange(1)"
+            >
+              <i data-lucide="plus" width="15"></i>
+            </button>
+
+
+            <span
+              class="quantity-number"
+              id="detailQuantity"
+              data-product-id="${product.id}"
+            >
+              ${quantity}
+            </span>
+
+
+            <button
+              onclick="detailQuantityChange(-1)"
+            >
+              <i data-lucide="minus" width="15"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <button
+          class="detail-add"
+          onclick="addDetailProduct(${product.id})"
+        >
+
+          <i
+            data-lucide="shopping-cart"
+            width="18"
+          ></i>
+
+          أضف إلى السلة
+
+        </button>
+
+      </div>
+
+    `;
+
+
+    renderRecommendations(product.id);
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     DETAIL QUANTITY
+  ========================================= */
+
+  function detailQuantityChange(change) {
+
+    const element =
+      document.getElementById("detailQuantity");
+
+    if (!element) return;
+
+
+    let quantity =
+      parseInt(element.textContent);
+
+
+    quantity += change;
+
+
+    if (quantity < 1) {
+      quantity = 1;
+    }
+
+
+    element.textContent =
+      quantity;
+
+  }
+
+
+  /* =========================================
+     ADD DETAIL PRODUCT
+  ========================================= */
+
+  function addDetailProduct(id) {
+
+    const quantityElement =
+      document.getElementById("detailQuantity");
+
+    const quantity =
+      quantityElement
+        ? parseInt(quantityElement.textContent)
+        : 1;
+
+
+    const existing =
+      cart.find(
+        item => item.id === id
+      );
+
+
+    if (existing) {
+
+      existing.quantity += quantity;
+
+    } else {
+
+      cart.push({
+        id: id,
+        quantity: quantity
+      });
+
+    }
+
+
+    saveCart();
+
+    updateCartCount();
+
+    renderProducts();
+
+
+    const product =
+      products.find(
+        p => p.id === id
+      );
+
+
+    showToast(
+      `${product.name} تمت إضافته إلى السلة`
+    );
+
+  }
+
+
+  /* =========================================
+     RECOMMENDATIONS
+  ========================================= */
+
+  function renderRecommendations(currentId) {
+
+    const recommended =
+      products
+        .filter(
+          product => product.id !== currentId
+        )
+        .slice(0,3);
+
+
+    document.getElementById(
+      "recommendedProducts"
+    ).innerHTML =
+      recommended
+        .map(createProductCard)
+        .join("");
+
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     ADD TO CART
+  ========================================= */
+
+  function addToCart(id) {
+
+    const existing =
+      cart.find(
+        item => item.id === id
+      );
+
+
+    if (existing) {
+
+      existing.quantity++;
+
+    } else {
+
+      cart.push({
+        id: id,
+        quantity: 1
+      });
+
+    }
+
+
+    saveCart();
+
+    updateCartCount();
+
+    renderProducts();
+
+
+    const product =
+      products.find(
+        p => p.id === id
+      );
+
+
+    showToast(
+      `${product.name} تمت إضافته إلى السلة`
+    );
+
+  }
+
+
+  /* =========================================
+     SAVE CART
+  ========================================= */
+
+  function saveCart() {
+
+    localStorage.setItem(
+      "beeuora_cart",
+      JSON.stringify(cart)
+    );
+
+  }
+
+
+  /* =========================================
+     CART COUNT
+  ========================================= */
+
+  function updateCartCount() {
+
+    const count =
+      cart.reduce(
+        (total,item) =>
+          total + item.quantity,
+        0
+      );
+
+
+    document.getElementById(
+      "cartCount"
+    ).textContent =
+      count > 99 ? "99+" : count;
+
+
+    document.getElementById(
+      "bottomCartCount"
+    ).textContent =
+      count > 99 ? "99+" : count;
+
+  }
+
+
+  /* =========================================
+     CHANGE CART QUANTITY
+  ========================================= */
+
+  function changeQuantity(id, change) {
+
+    const item =
+      cart.find(
+        item => item.id === id
+      );
+
+
+    if (!item) return;
+
+
+    item.quantity += change;
+
+
+    if (item.quantity <= 0) {
+
+      cart =
+        cart.filter(
+          item => item.id !== id
+        );
+
+    }
+
+
+    saveCart();
+
+    updateCartCount();
+
+    renderCart();
+
+    renderProducts();
+
+  }
+
+
+  /* =========================================
+     REMOVE
+  ========================================= */
+
+  function removeFromCart(id) {
+
+    cart =
+      cart.filter(
+        item => item.id !== id
+      );
+
+
+    saveCart();
+
+    updateCartCount();
+
+    renderCart();
+
+    renderProducts();
+
+
+    showToast(
+      "تم حذف المنتج من السلة"
+    );
+
+  }
+
+
+  /* =========================================
+     RENDER CART
+  ========================================= */
+
+  function renderCart() {
+
+    const container =
+      document.getElementById(
+        "cartContainer"
+      );
+
+
+    const summary =
+      document.getElementById(
+        "cartSummary"
+      );
+
+
+    if (!cart.length) {
+
+      summary.style.display =
+        "none";
+
+
+      container.innerHTML = `
+
+        <div class="empty-cart">
+
+          <div class="empty-icon">
+
+            <i
+              data-lucide="shopping-cart"
+              width="30"
+            ></i>
+
+          </div>
+
+
+          <h2>
+            السلة فارغة
+          </h2>
+
+
+          <p>
+            لم تضف أي منتجات إلى السلة حتى الآن.
+          </p>
+
+
+          <a
+            href="#products"
+            class="empty-cart-btn"
+            onclick="navigate('products')"
+          >
+
+            تصفح المنتجات
+
+            <i
+              data-lucide="arrow-left"
+              width="15"
+            ></i>
+
+          </a>
+
+        </div>
+
+      `;
+
+
+      updateSummary(0,0);
+
+      lucide.createIcons();
+
+      return;
+
+    }
+
+
+    summary.style.display =
+      "block";
+
+
+    let totalQuantity = 0;
+
+    let subtotal = 0;
+
+
+    container.innerHTML = `
+
+      <div class="cart-items">
+
+        ${cart.map(item => {
+
+          const product =
+            products.find(
+              p => p.id === item.id
+            );
+
+
+          if (!product) return "";
+
+
+          const itemTotal =
+            product.price *
+            item.quantity;
+
+
+          totalQuantity +=
+            item.quantity;
+
+
+          subtotal +=
+            itemTotal;
+
+
+          return `
+
+            <div class="cart-item">
+
+              <div
+                class="cart-item-image"
+                onclick="openProduct(${product.id})"
+                style="cursor:pointer"
+              >
+
+                <img
+                  src="${product.image}"
+                  alt="${product.name}"
+                >
+
+              </div>
+
+
+              <div class="cart-item-details">
+
+                <div class="cart-item-name">
+                  ${product.name}
+                </div>
+
+                <div class="cart-item-price">
+                  ${formatPrice(product.price)}
+                  جنيه / ${product.unit}
+                </div>
+
+              </div>
+
+
+              <div class="quantity-control">
+
+                <button
+                  onclick="changeQuantity(${product.id},1)"
+                >
+                  <i data-lucide="plus" width="14"></i>
+                </button>
+
+
+                <span class="quantity-number">
+                  ${item.quantity}
+                </span>
+
+
+                <button
+                  onclick="changeQuantity(${product.id},-1)"
+                >
+                  <i data-lucide="minus" width="14"></i>
+                </button>
+
+              </div>
+
+
+              <div class="cart-item-total">
+                ${formatPrice(itemTotal)}
+                جنيه
+              </div>
+
+
+              <button
+                class="remove-btn"
+                onclick="removeFromCart(${product.id})"
+              >
+
+                <i
+                  data-lucide="trash-2"
+                  width="17"
+                ></i>
+
+              </button>
+
+            </div>
+
+          `;
+
+        }).join("")}
+
+      </div>
+
+    `;
+
+
+    updateSummary(
+      totalQuantity,
+      subtotal
+    );
+
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     SUMMARY
+  ========================================= */
+
+  function updateSummary(
+    quantity,
+    subtotal
+  ) {
+
+    document.getElementById(
+      "summaryQuantity"
+    ).textContent =
+      quantity;
+
+
+    document.getElementById(
+      "summarySubtotal"
+    ).textContent =
+      `${formatPrice(subtotal)} جنيه`;
+
+
+    document.getElementById(
+      "summaryTotal"
+    ).textContent =
+      `${formatPrice(subtotal)} جنيه`;
+
+  }
+
+
+  /* =========================================
+     NAVIGATION
+  ========================================= */
+
+  function navigate(
+    page,
+    updateHash = true
+  ) {
+
+    if (event) {
+      event.preventDefault();
+    }
+
+
+    const pages = {
+
+      home:
+        document.getElementById("homePage"),
+
+      products:
+        document.getElementById("productsPage"),
+
+      product:
+        document.getElementById("productPage"),
+
+      cart:
+        document.getElementById("cartPage")
+
+    };
+
+
+    Object.values(pages).forEach(
+      element => {
+
+        element.classList.remove(
+          "active"
+        );
+
+      }
+    );
+
+
+    if (pages[page]) {
+
+      pages[page].classList.add(
+        "active"
+      );
+
+    }
+
+
+    document
+      .querySelectorAll(".nav-link")
+      .forEach(link => {
+
+        link.classList.remove(
+          "active"
+        );
+
+      });
+
+
+    document
+      .querySelectorAll(".bottom-link")
+      .forEach(link => {
+
+        link.classList.remove(
+          "active"
+        );
+
+      });
+
+
+    if (
+      page === "home" ||
+      page === "products" ||
+      page === "cart"
+    ) {
+
+      const topLink =
+        document.querySelector(
+          `.nav-link[data-page="${page}"]`
+        );
+
+
+      const bottomLink =
+        document.querySelector(
+          `.bottom-link[data-bottom-page="${page}"]`
+        );
+
+
+      if (topLink) {
+        topLink.classList.add("active");
+      }
+
+
+      if (bottomLink) {
+        bottomLink.classList.add("active");
+      }
+
+    }
+
+
+    if (page === "cart") {
+
+      renderCart();
+
+    }
+
+
+    if (updateHash) {
+
+      history.replaceState(
+        null,
+        "",
+        "#" + page
+      );
+
+    }
+
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     CHECKOUT
+  ========================================= */
+
+  function checkout() {
+
+    if (!cart.length) {
+
+      showToast(
+        "أضف منتجًا إلى السلة أولًا"
+      );
+
+      return;
+
+    }
+
+
+    showToast(
+      "سيتم إضافة نظام إتمام الطلب قريبًا"
+    );
+
+  }
+
+
+  /* =========================================
+     TOAST
+  ========================================= */
+
+  let toastTimer;
+
+
+  function showToast(message) {
+
+    const toast =
+      document.getElementById(
+        "toast"
+      );
+
+
+    document.getElementById(
+      "toastText"
+    ).textContent =
+      message;
+
+
+    toast.classList.add(
+      "show"
+    );
+
+
+    clearTimeout(
+      toastTimer
+    );
+
+
+    toastTimer =
+      setTimeout(() => {
+
+        toast.classList.remove(
+          "show"
+        );
+
+      },2500);
+
+  }
+
+
+  /* =========================================
+     INITIALIZE
+  ========================================= */
+
+  function initialize() {
+
+    renderProducts();
+
+    updateCartCount();
+
+
+    const hash =
+      window.location.hash
+        .replace("#","");
+
+
+    if (
+      hash === "products" ||
+      hash === "cart"
+    ) {
+
+      navigate(
+        hash,
+        false
+      );
+
+    } else {
+
+      navigate(
+        "home",
+        false
+      );
+
+    }
+
+
+    lucide.createIcons();
+
+  }
+
+
+  /* =========================================
+     HASH CHANGE
+  ========================================= */
+
+  window.addEventListener(
+    "hashchange",
+    () => {
+
+      const page =
+        window.location.hash
+          .replace("#","");
+
+
+      if (
+        page === "home" ||
+        page === "products" ||
+        page === "cart"
+      ) {
+
+        navigate(
+          page,
+          false
+        );
+
+      }
+
+    }
+  );
+
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    initialize
+  );
+
+</script>
+
+</body>
+</html>
